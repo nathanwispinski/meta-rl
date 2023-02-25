@@ -1,3 +1,10 @@
+# Custom .gitignore
+meta-rl-venv/
+*.csv
+log.*
+
+# Github default Python .gitignore below
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
