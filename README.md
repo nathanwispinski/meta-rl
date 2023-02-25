@@ -52,7 +52,7 @@ Note: Your results will likely be different given the randomness involved in tra
 ### Training
 To train a model in the browser using a Google Colab notebook, run `train.ipynb`: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathanwispinski/meta-rl/blob/main/train.ipynb)
 
-Model training in the Colab is single-threaded, and may take a while. After training is done, the Colab will save a `*.pickle` file with the trained model parameters that you can download. If you would like to skip training and skip to the results, `trained_agent.pickle` is provided for you.
+Model training in the Colab is single-threaded, and may take a while. After training is done, the Colab will save a `*.pickle` file with the trained model parameters that you can download. If you would like to skip training and go straight to the results, `trained_agent.pickle` is provided for you.
 
 ### Evaluation and analysis
 To evaluate and analyze the results of a trained model in the browser using a Google Colab notebook, run `eval_and_analyze.ipynb`: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nathanwispinski/meta-rl/blob/main/eval_and_analyze.ipynb)
@@ -65,7 +65,7 @@ To play the environment as a human, run `play_env_as_human.ipynb` in Google Cola
 
 ## Diving deeper
 
-For some more involved interrogation of this code, you will need a copy of this repository. Note: this code has been tested with [Python 3.9.16](https://www.python.org/downloads/release/python-3916/)—this code may not work with other versions of Python.
+For some more involved interrogation of this code, you will need a copy of this repository. Note: this code has been tested with [Python 3.9.16](https://www.python.org/downloads/release/python-3916/)—this code may not work with other versions of Python. As this code relies on [Jax](https://github.com/google/jax), it does not currently work on Windows machines out-of the-box as of the time I write this (but see [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install)).
 
 First, clone this repository into a folder on your computer using [git](https://github.com/git-guides/install-git):
 
