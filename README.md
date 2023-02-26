@@ -24,7 +24,9 @@ The reinforcement learning model we train to complete this task is a simple recu
 
   * Output: One linear unit for each of the *N* available actions. The model's action is selected from these output unit activations probabilistically after a softmax operation.
 
-![meta-reinforcement learning replication results for a two-armed bandit task](https://colab.research.google.com/assets/colab-badge.svg)
+<p align="center" width="100%">
+    <img width="50%" src="meta-rl-network.png">
+</p>
 
 After a certain number of steps (or at the end of each episode), model parameters are updated via the [Asynchronous Advantage Actor Critic (A3C) reinforcement learning algorithm](https://arxiv.org/abs/1602.01783). After training, model parameters are frozen and the model is evaluated on the same task.
 
