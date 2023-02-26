@@ -42,7 +42,7 @@ Notice that at the beginning of each episode (trials on the left) model actions 
     <img width="50%" src="two-armed-bandit-results.png">
 </p>
 
-From the paper:
+From [the paper](https://arxiv.org/pdf/1611.05763.pdf):
 > "[...] here the procedure the recurrent network implements is itself a full-fledged reinforcement learning algorithm, which negotiates the exploration-exploitation tradeoff and improves the agent’s policy based on reward outcomes. A key point [...] is that this learned RL procedure can differ starkly from the algorithm used to train the network’s weights. 
 
 Note: Your results will likely be different given the randomness involved in training and evaluation, even with the same hyperparameters.
@@ -117,4 +117,4 @@ To customize evalution, similarly create a new evaluation config, or provide ove
 
 [1] [Wang, J. X., Kurth-Nelson, Z., Kumaran, D., Tirumala, D., Soyer, H., Leibo, J. Z., ... & Botvinick, M. (2018). Prefrontal cortex as a meta-reinforcement learning system. *Nature neuroscience*, *21*(6), 860-868.](https://www.nature.com/articles/s41593-018-0147-8)
 
-[2] [Wang, J. X., Kurth-Nelson, Z., Tirumala, D., Soyer, H., Leibo, J. Z., Munos, R., ... & Botvinick, M. (2016). Learning to reinforcement learn. *arXiv*:1611.05763.](https://arxiv.org/pdf/1611.05763.pdf),)
+[2] [Wang, J. X., Kurth-Nelson, Z., Tirumala, D., Soyer, H., Leibo, J. Z., Munos, R., ... & Botvinick, M. (2016). Learning to reinforcement learn. *arXiv*:1611.05763.](https://arxiv.org/pdf/1611.05763.pdf)
