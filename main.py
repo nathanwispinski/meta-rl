@@ -12,12 +12,7 @@ import modules.evaluators as evaluators
 
 FLAGS = flags.FLAGS
 
-# PROD
-# config_flags.DEFINE_config_file('config') # NOTE: this is prod
-
-# DEBUG
-from configs.bandit_config_train import get_config
-config_flags.DEFINE_config_dict('config', get_config()) # NOTE: this is debug
+config_flags.DEFINE_config_file('config') # NOTE: this is prod
 
 def main(_):
     """Launch distributed training or testing.

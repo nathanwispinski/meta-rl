@@ -88,7 +88,7 @@ For distributed (i.e., multi-threaded) training and evaluation, double check you
 For distributed training run:
 
 ```sh
-python main.py --config=configs.bandit_config_train.py
+python main.py --config=configs/bandit_config_train.py
 ```
 
 - The manager will output a `log.INFO` file.
@@ -98,19 +98,19 @@ python main.py --config=configs.bandit_config_train.py
 To customize training, create a new config file to provide to the launch training command, e.g., 
 
 ```sh
-python main.py --config=configs.new_config.py
+python main.py --config=configs/new_config.py
 ```
 
 Or provide config override arguments at the command line level, e.g.,
 
 ```sh
-python main.py --config=configs.bandit_config_train.py --config.agent.random_seed=42
+python main.py --config=configs/bandit_config_train.py --config.agent.random_seed=42
 ```
 
 For distributed evaluation run:
 
 ```sh
-python main.py --config=configs.bandit_config_eval.py
+python main.py --config=configs/bandit_config_eval.py
 ```
 
 - The manager will save a `data_*.pickle` file with evaluation data when done.

@@ -7,7 +7,7 @@ def get_config():
 
     # Saving
     config.path = './'
-    config.params_filename = 'train_test'
+    config.params_filename = 'my_trained_agent'
 
     # Training
     config.random_seed = 42
