@@ -69,7 +69,7 @@ class BanditEnv:
             self._arm_probs = np.random.uniform(size=self._num_arms)
             self._arm_probs = self._arm_probs / np.sum(self._arm_probs)
         else:
-            raise ValueError(f'Reward structure {self._reward_structure} does not exist.')
+            raise NameError(f'Reward structure {self._reward_structure} does not exist.')
 
     def reset(self, arm_probs = None) -> Dict[str, np.ndarray]:
         """Reset environment at the start of each episode.
@@ -83,7 +83,7 @@ class BanditEnv:
         if arm_probs is not None:
             # Manual win probabilities for each arm
             if not isinstance(arm_probs, np.ndarray):
-                raise ValueError(f'arm_probs must be a numpy array.')
+                raise TypeError(f'arm_probs must be a numpy array.')
             if np.shape(arm_probs) != np.shape(self._arm_probs):
                 raise ValueError(f'arm_probs shape {np.shape(arm_probs)} does not match required shape {np.shape(self._arm_probs)}.')
             if np.any(self._arm_probs < 0.0) or np.any(self._arm_probs > 1.0):

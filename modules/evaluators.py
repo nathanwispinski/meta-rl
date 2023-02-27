@@ -211,7 +211,7 @@ class TestingEvaluator(mp.Process):
                 next_observation, reward, done, info = env.step(action)
                 observation = next_observation
 
-                # Save data for analysis.ipynb
+                # Save dynamics data for analysis
                 if log_dynamics:
                     episode_data['action'].append(np.array(action))
                     episode_data['pi_out'].append(np.array(pi_out))
