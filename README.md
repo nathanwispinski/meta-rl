@@ -24,6 +24,8 @@ The reinforcement learning model we train to complete this task is a simple recu
 
   * Output: One linear unit for each of the *N* available actions. The model's action is selected from these output unit activations probabilistically after a softmax operation.
 
+Here is an example of what the network looks like in a task with 2 available actions (also known as a two-armed bandit task):
+
 <p align="center" width="100%">
     <img width="50%" src="meta-rl-network.png">
 </p>
@@ -32,9 +34,9 @@ After a certain number of steps (or at the end of each episode), model parameter
 
 ## Results
 
-Here are some results from model evaluation after training (i.e., model parameters have been frozen) in a task with 2 available actions (also known as a two-armed bandit task).
+Here are some results from model evaluation after training (i.e., model parameters have been frozen) in the two-armed bandit task.
 
-Each row is a single, independent evaluation episode of 100 trials. The rows are ordered based on the probabilities of the two actions, with 100% win probability for action 1 and 0% win probability for action 2 in the top row, 50% win probability for action 1 and 50% win probability for action 2 in the middle, and 0% win probability for action 1 and 100% win probability for action 2 in the bottom row.
+In the figure below, each row is a single, independent evaluation episode of 100 trials. The rows are ordered based on the probabilities of the two actions, with 100% win probability for action 1 and 0% win probability for action 2 in the top row, 50% win probability for action 1 and 50% win probability for action 2 in the middle, and 0% win probability for action 1 and 100% win probability for action 2 in the bottom row.
 
 The color of each trial corresponds to the model's action on that trial (blue, Arm 1; grey, Arm 2).
 
